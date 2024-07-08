@@ -151,5 +151,15 @@ SELECT * FROM accommodation;
 
 SELECT * FROM visitor;
 
+SELECT * FROM department;
 
+SELECT * FROM areas;
+
+SELECT * FROM species;
+
+SELECT * FROM inventory;
+
+SELECT * FROM staff;
+
+SELECT * FROM entry;
 
