@@ -1,6 +1,7 @@
 SHOW DATABASES;
 
 CREATE DATABASE the_environmental_ones;
+DROP DATABASE the_environmental_ones;
 
 USE the_environmental_ones;
 
@@ -21,6 +22,7 @@ CREATE TABLE natural_park (
 
 CREATE TABLE accommodation (
     accommodation_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
     capacity INT NOT NULL,
     park_id INT NOT NULL,
     limit_cap INT NOT NULL,
@@ -81,26 +83,24 @@ CREATE TABLE staff (
     type_staff ENUM('management_staff', 'surveillance_staff', 'conservation_staff', 'research_staff')
 );
 
+CREATE TABLE entry (
+    entry_id INT PRIMARY KEY AUTO_INCREMENT,
+    entry_number INT NOT NULL,
+    park_id INT NOT NULL,
+    FOREIGN KEY (park_id) REFERENCES natural_park(park_id)
+);
+
 CREATE TABLE management_staff (
     management_staff_id INT PRIMARY KEY AUTO_INCREMENT,
     staff_id INT NOT NULL,
     FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
-    entry_id INT NOT NULL
-);
-
-CREATE TABLE entry (
-    entry_id INT PRIMARY KEY AUTO_INCREMENT,
-    entry_number INT NOT NULL,
-    management_staff_id INT NOT NULL,
-    FOREIGN KEY (management_staff_id) REFERENCES management_staff(management_staff_id),
-    park_id INT NOT NULL,
-    FOREIGN KEY (park_id) REFERENCES natural_park(park_id)
+    entry_id INT NOT NULL,
+    FOREIGN KEY (entry_id) REFERENCES entry(entry_id)
 );
 
 CREATE TABLE vehicle (
     vehicle_id INT PRIMARY KEY AUTO_INCREMENT,
     brand VARCHAR(50),
-    plate VARCHAR(10),
     type VARCHAR(50)
 );
 
@@ -132,10 +132,13 @@ CREATE TABLE research_staff (
 
 CREATE TABLE research_project (
     project_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL, 
     budget DECIMAL(15, 2) NOT NULL,
     execution_period VARCHAR(100) NOT NULL,
     research_staff_id INT NOT NULL,
-    FOREIGN KEY (research_staff_id) REFERENCES research_staff(research_staff_id)
+    FOREIGN KEY (research_staff_id) REFERENCES research_staff(research_staff_id),
+    specie_id INT NOT NULL,
+    FOREIGN KEY (specie_id) REFERENCES species(species_id)
 );
 
 SHOW TABLES;
@@ -143,5 +146,10 @@ SHOW TABLES;
 SELECT *  FROM responsible_entity;
 
 SELECT * FROM natural_park;
+
+SELECT * FROM accommodation;
+
+SELECT * FROM visitor;
+
 
 
