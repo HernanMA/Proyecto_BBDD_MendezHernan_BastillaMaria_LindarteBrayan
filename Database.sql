@@ -26,6 +26,7 @@ CREATE TABLE accommodation (
     FOREIGN KEY (park_id) REFERENCES natural_park(park_id)
 );
 
+
 CREATE TABLE visitor (
     visitor_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100),
@@ -73,12 +74,17 @@ CREATE TABLE research_project (
     execution_period VARCHAR(100) NOT NULL
 );
 
+ALTER TABLE research_project ADD name VARCHAR (100);
+
+
 CREATE TABLE vehicle (
     vehicle_id INT PRIMARY KEY AUTO_INCREMENT,
     brand VARCHAR(50),
     plate VARCHAR(10),
     type VARCHAR(50)
 );
+
+ALTER TABLE vehicle DROP COLUMN plate;
 
 CREATE TABLE personnel (
     personnel_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -91,6 +97,8 @@ CREATE TABLE personnel (
     park_id INT NOT NULL,
     FOREIGN KEY (park_id) REFERENCES natural_park(park_id)
 );
+
+RENAME TABLE personnel TO staff;
 
 CREATE TABLE management_personnel (
     management_personnel_id INT PRIMARY KEY AUTO_INCREMENT,
