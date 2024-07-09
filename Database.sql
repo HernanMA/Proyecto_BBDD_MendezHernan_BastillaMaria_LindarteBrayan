@@ -23,7 +23,7 @@ CREATE TABLE natural_park (
 CREATE TABLE accommodation (
     accommodation_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
-    capacity INT NOT NULL,
+    category ENUM('3 Estrellas', '4 Estrellas', '5 Estrellas') NOT NULL,
     park_id INT NOT NULL,
     limit_cap INT NOT NULL,
     FOREIGN KEY (park_id) REFERENCES natural_park(park_id)
