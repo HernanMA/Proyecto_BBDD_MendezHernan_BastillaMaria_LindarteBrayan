@@ -2880,31 +2880,32 @@ INSERT INTO management_staff (management_staff_id, staff_id, entry_id) VALUES (2
 
 -- Vehicle's inserts
 
-insert into vehicle (vehicle_id, brand, type) values (1, null, '2015-09-01 02:21:51');
-insert into vehicle (vehicle_id, brand, type) values (2, null, '2024-01-13 15:18:03');
-insert into vehicle (vehicle_id, brand, type) values (3, null, '2024-03-12 14:00:03');
-insert into vehicle (vehicle_id, brand, type) values (4, null, '2024-04-10 03:19:21');
-insert into vehicle (vehicle_id, brand, type) values (5, null, '2020-02-03 18:04:22');
-insert into vehicle (vehicle_id, brand, type) values (6, null, '2022-02-11 14:02:52');
-insert into vehicle (vehicle_id, brand, type) values (7, null, '2016-09-22 12:12:30');
-insert into vehicle (vehicle_id, brand, type) values (8, null, '2019-10-06 16:19:21');
-insert into vehicle (vehicle_id, brand, type) values (9, null, '2022-09-27 01:35:49');
-insert into vehicle (vehicle_id, brand, type) values (10, null, '2017-08-25 01:27:21');
-insert into vehicle (vehicle_id, brand, type) values (11, null, '2020-05-20 01:09:31');
-insert into vehicle (vehicle_id, brand, type) values (12, null, '2024-04-30 19:48:43');
-insert into vehicle (vehicle_id, brand, type) values (13, null, '2016-05-11 12:55:37');
-insert into vehicle (vehicle_id, brand, type) values (14, null, '2019-03-20 17:36:44');
-insert into vehicle (vehicle_id, brand, type) values (15, null, '2022-11-16 23:35:15');
-insert into vehicle (vehicle_id, brand, type) values (16, null, '2019-08-26 00:30:52');
-insert into vehicle (vehicle_id, brand, type) values (17, null, '2023-05-26 16:51:10');
-insert into vehicle (vehicle_id, brand, type) values (18, null, '2018-06-20 12:27:44');
-insert into vehicle (vehicle_id, brand, type) values (19, null, '2020-01-01 06:36:27');
-insert into vehicle (vehicle_id, brand, type) values (20, null, '2016-03-07 20:01:05');
-insert into vehicle (vehicle_id, brand, type) values (21, null, '2021-03-16 10:49:27');
-insert into vehicle (vehicle_id, brand, type) values (22, null, '2022-03-22 13:31:42');
-insert into vehicle (vehicle_id, brand, type) values (23, null, '2023-02-02 19:37:03');
-insert into vehicle (vehicle_id, brand, type) values (24, null, '2017-04-27 10:54:18');
-insert into vehicle (vehicle_id, brand, type) values (25, null, '2021-04-10 20:38:09');
+insert into vehicle (vehicle_id, brand, type) values (1, 'Toyota', '2015-09-01 02:21:51');
+insert into vehicle (vehicle_id, brand, type) values (2, 'Honda', '2024-01-13 15:18:03');
+insert into vehicle (vehicle_id, brand, type) values (3, 'Ford', '2024-03-12 14:00:03');
+insert into vehicle (vehicle_id, brand, type) values (4, 'Chevrolet', '2024-04-10 03:19:21');
+insert into vehicle (vehicle_id, brand, type) values (5, 'Nissan', '2020-02-03 18:04:22');
+insert into vehicle (vehicle_id, brand, type) values (6, 'BMW', '2022-02-11 14:02:52');
+insert into vehicle (vehicle_id, brand, type) values (7, 'Mercedes', '2016-09-22 12:12:30');
+insert into vehicle (vehicle_id, brand, type) values (8, 'Audi', '2019-10-06 16:19:21');
+insert into vehicle (vehicle_id, brand, type) values (9, 'Hyundai', '2022-09-27 01:35:49');
+insert into vehicle (vehicle_id, brand, type) values (10, 'Kia', '2017-08-25 01:27:21');
+insert into vehicle (vehicle_id, brand, type) values (11, 'Volkswagen', '2020-05-20 01:09:31');
+insert into vehicle (vehicle_id, brand, type) values (12, 'Mazda', '2024-04-30 19:48:43');
+insert into vehicle (vehicle_id, brand, type) values (13, 'Subaru', '2016-05-11 12:55:37');
+insert into vehicle (vehicle_id, brand, type) values (14, 'Tesla', '2019-03-20 17:36:44');
+insert into vehicle (vehicle_id, brand, type) values (15, 'Lexus', '2022-11-16 23:35:15');
+insert into vehicle (vehicle_id, brand, type) values (16, 'Volvo', '2019-08-26 00:30:52');
+insert into vehicle (vehicle_id, brand, type) values (17, 'Jaguar', '2023-05-26 16:51:10');
+insert into vehicle (vehicle_id, brand, type) values (18, 'Land Rover', '2018-06-20 12:27:44');
+insert into vehicle (vehicle_id, brand, type) values (19, 'Mitsubishi', '2020-01-01 06:36:27');
+insert into vehicle (vehicle_id, brand, type) values (20, 'Renault', '2016-03-07 20:01:05');
+insert into vehicle (vehicle_id, brand, type) values (21, 'Peugeot', '2021-03-16 10:49:27');
+insert into vehicle (vehicle_id, brand, type) values (22, 'Fiat', '2022-03-22 13:31:42');
+insert into vehicle (vehicle_id, brand, type) values (23, 'Porsche', '2023-02-02 19:37:03');
+insert into vehicle (vehicle_id, brand, type) values (24, 'Ferrari', '2017-04-27 10:54:18');
+insert into vehicle (vehicle_id, brand, type) values (25, 'Lamborghini', '2021-04-10 20:38:09');
+
 
 -- surveillance_staff'S staff
 
@@ -2990,3 +2991,56 @@ INSERT INTO research_staff (staff_id, degree) VALUES (97, 'Bachelor\'s in Physic
 INSERT INTO research_staff (staff_id, degree) VALUES (98, 'Bachelor\'s in Environmental Science');
 INSERT INTO research_staff (staff_id, degree) VALUES (99, 'Bachelor\'s in Mathematics');
 INSERT INTO research_staff (staff_id, degree) VALUES (100, 'Bachelor\'s in Computer Science');
+
+-- Research proyect's inserts
+
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (1, 'Consumer Durables', 6799, '2021-04-30 10:59:47', 23, 1);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (2, 'n/a', 2840, '2021-09-23 00:55:37', 9, 2);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (3, 'Health Care', 2155, '2023-06-22 18:48:45', 3, 3);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (4, 'Finance', 1333, '2022-06-30 20:48:34', 4, 4);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (5, 'Consumer Non-Durables', 4730, '2015-12-11 16:59:46', 22, 5);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (6, 'n/a', 7016, '2019-01-08 01:46:01', 17, 6);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (7, 'Basic Industries', 5997, '2020-01-22 20:01:23', 22, 7);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (8, 'Health Care', 2450, '2019-10-02 03:42:21', 6, 8);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (9, 'Finance', 1914, '2023-03-11 18:23:07', 11, 9);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (10, 'Consumer Non-Durables', 7436, '2019-12-28 00:23:49', 20, 10);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (11, 'Basic Industries', 9360, '2016-09-24 13:42:34', 15, 11);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (12, 'Consumer Services', 2607, '2024-06-27 09:18:17', 7, 12);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (13, 'Basic Industries', 1065, '2023-06-22 15:46:52', 18, 13);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (14, 'Basic Industries', 125, '2022-07-21 19:51:45', 15, 14);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (15, 'Finance', 5039, '2018-09-19 19:39:05', 24, 15);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (16, 'Health Care', 1766, '2020-05-01 10:32:35', 4, 16);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (17, 'Health Care', 3285, '2022-03-23 23:04:57', 2, 17);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (18, 'Basic Industries', 1144, '2020-07-30 17:46:18', 10, 18);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (19, 'n/a', 3026, '2016-10-19 04:25:33', 13, 19);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (20, 'Finance', 2718, '2024-04-01 19:17:41', 7, 20);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (21, 'Energy', 8141, '2022-05-03 04:49:53', 17, 21);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (22, 'Finance', 1472, '2021-07-22 22:03:44', 7, 22);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (23, 'Consumer Non-Durables', 7197, '2017-11-06 04:41:03', 25, 23);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (24, 'Miscellaneous', 7653, '2019-07-30 22:49:22', 9, 24);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (25, 'n/a', 1613, '2018-02-09 06:52:05', 10, 25);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (26, 'Consumer Services', 2293, '2023-07-30 17:23:05', 2, 26);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (27, 'n/a', 4005, '2016-09-29 02:11:57', 18, 27);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (28, 'n/a', 7511, '2022-09-17 14:07:24', 5, 28);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (29, 'Health Care', 1722, '2016-08-25 20:38:51', 17, 29);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (30, 'Technology', 4080, '2023-02-11 11:16:39', 17, 30);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (31, 'Public Utilities', 6339, '2016-12-24 04:48:25', 10, 31);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (32, 'Public Utilities', 6591, '2017-08-24 21:53:00', 2, 32);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (33, 'Capital Goods', 8208, '2019-10-21 21:57:34', 24, 33);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (34, 'Consumer Services', 1464, '2020-11-26 04:45:09', 7, 34);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (35, 'Technology', 3429, '2019-03-08 18:52:51', 25, 35);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (36, 'Finance', 7093, '2020-07-31 21:22:50', 18, 36);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (37, 'n/a', 2439, '2020-11-24 09:38:42', 21, 37);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (38, 'n/a', 3466, '2020-04-06 01:10:18', 18, 38);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (39, 'Health Care', 3404, '2019-03-03 08:20:26', 17, 39);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (40, 'Finance', 7130, '2015-10-28 08:14:15', 11, 40);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (41, 'Consumer Services', 2544, '2018-02-08 00:33:23', 9, 41);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (42, 'Energy', 7425, '2022-11-08 23:22:02', 12, 42);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (43, 'Consumer Services', 1098, '2021-11-21 12:19:03', 4, 43);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (44, 'Transportation', 5679, '2019-10-08 09:06:27', 12, 44);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (45, 'Consumer Non-Durables', 4336, '2017-11-04 00:36:10', 15, 45);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (46, 'Capital Goods', 349, '2022-03-28 02:37:48', 17, 46);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (47, 'Finance', 5176, '2021-03-01 11:41:52', 3, 47);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (48, 'Finance', 8038, '2015-08-05 04:45:21', 15, 48);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (49, 'Finance', 3415, '2016-11-17 05:48:52', 21, 49);
+insert into research_project (project_id, name, budget, execution_period, research_staff_id, specie_id) values (50, 'Consumer Durables', 175, '2024-06-22 17:33:01', 24, 50);

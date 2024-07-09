@@ -134,7 +134,7 @@ CREATE TABLE research_project (
     project_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL, 
     budget DECIMAL(15, 2) NOT NULL,
-    execution_period VARCHAR(100) NOT NULL,
+    execution_period DATE NOT NULL,
     research_staff_id INT NOT NULL,
     FOREIGN KEY (research_staff_id) REFERENCES research_staff(research_staff_id),
     specie_id INT NOT NULL,
@@ -163,3 +163,14 @@ SELECT * FROM staff;
 
 SELECT * FROM entry;
 
+SELECT * FROM management_staff;
+
+SELECT * FROM vehicle;
+
+SELECT * FROM surveillance_staff;
+
+SELECT * FROM conservation_staff;
+
+SELECT * FROM research_staff;
+
+SELECT * FROM research_project;
