@@ -2,7 +2,6 @@
 -- #############################
 -- #### Permisos y accesos #####
 -- #############################
-
 USE the_environmental_ones;
 
 -- User management_staff
@@ -63,3 +62,16 @@ GRANT SELECT ON the_environmental_ones.research_project TO 'research_staff'@'%';
 -- El personal de investigancion tiene el permiso de visualizar los datos de los proyectos , puede mirar  las especies dentro del parque en caso de encontrar una nueva 
 -- puede insertar los datos de la especie y actualizar esta tabla  y los investigadores
 
+
+-- ################################
+-- ########## Visitantes ##########
+-- ################################
+
+CREATE USER 'visitor'@'%' IDENTIFIED BY 'visitor123';
+
+-- Permisos
+GRANT SELECT ON the_environmental_ones.visitor TO 'visitor'@'%';
+GRANT SELECT ON the_environmental_ones.accommodation TO 'visitor'@'%';
+GRANT SELECT ON the_environmental_ones.areas TO 'visitor'@'%';
+GRANT SELECT ON the_environmental_ones.natural_park TO 'visitor'@'%';
+GRANT SELECT ON the_environmental_ones.entry TO 'visitor'@'%';
