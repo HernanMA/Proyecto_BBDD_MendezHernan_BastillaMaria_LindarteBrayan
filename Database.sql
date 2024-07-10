@@ -144,33 +144,18 @@ CREATE TABLE research_project (
 SHOW TABLES;
 
 SELECT *  FROM responsible_entity;
-
 SELECT * FROM natural_park;
-
 SELECT * FROM accommodation;
-
 SELECT * FROM visitor;
-
 SELECT * FROM department;
-
 SELECT * FROM areas;
-
 SELECT * FROM species;
-
 SELECT * FROM inventory;
-
 SELECT * FROM staff;
-
 SELECT * FROM entry;
-
 SELECT * FROM management_staff;
-
 SELECT * FROM vehicle;
-
 SELECT * FROM surveillance_staff;
-
 SELECT * FROM conservation_staff;
-
 SELECT * FROM research_staff;
-
 SELECT * FROM research_project;
